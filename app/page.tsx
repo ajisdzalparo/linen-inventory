@@ -154,7 +154,7 @@ export default function InventoryForm() {
 
     // Generate filename with date
     const date = new Date().toISOString().split("T")[0];
-    XLSX.writeFile(workbook, `Linen_Inventory_Report_${date}.xlsx`);
+    XLSX.writeFile(workbook, `LR_${date}.xlsx`);
   };
 
   return (
